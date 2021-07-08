@@ -1,0 +1,213 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------------- */
+
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color:#090b1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;  */
+    /* text-align: center; */
+    /* border: 1px solid blue; */
+   
+  
+    
+}
+
+.container {
+  
+    /* max-width: 100%; */
+    /* Why 40rem here? */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+       margin: 100px 50px;
+       /* border: 1px solid green; */
+       
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: #1b1938;
+    max-width: 100%;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    overflow: hidden;
+    /* border: 1px solid red; */
+    
+    /* Overflow: hidden help the picture to change even if it too picture of the container */
+}
+
+.card-content {
+   
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    padding: 30px 0; 
+    margin: 0 30px;
+}
+
+/* Using background is also a good way to display a picture */
+
+.picture {
+    background: url("./images/image-header-mobile.jpg") center/cover;
+    /* height: 400px; */
+    /* max-width: 100%; */
+    
+}
+.layer {
+    background-color: hsla(277,64%,61%, 0.7);
+    height: 500px;
+}
+    
+.card-headline {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+span {
+    color: #aa5cdb;
+}
+
+.benefit {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.75);
+    word-spacing: 4px;
+    margin-bottom: 30px;
+    line-height:1.75rem ;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.numb {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.name {
+    text-transform: uppercase;
+    color: #ffffff99
+}
+
+.data div {
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.attribution {
+    text-align: center;
+    margin-bottom: 50px;
+    display: block;
+}
+
+@media(min-width: 798px){
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        padding-left:50px;
+        
+        
+    }
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .card-headline {
+        text-align: left;
+    }
+    .benefit {
+        text-align: left;
+    }
+    .data {
+        
+        display: flex;
+        flex-direction: row;
+         align-items:flex-start; 
+        justify-content: start;
+        text-align: left;
+        /* padding-right: 50px; */
+
+    }
+    .data div {
+        padding: 0px;
+        padding-right:40px;
+    }
+    .data .numb {
+        padding: 0;
+    }
+    .data .name {
+        padding-top: 20px;
+        text-align: left;
+    }
+    .picture {
+        background: url("./images/image-header-desktop.jpg") cover/center;
+        min-width: 50%;
+    }
+    
+}
+    
